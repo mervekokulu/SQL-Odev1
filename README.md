@@ -22,5 +22,5 @@
 5. film tablosundaki uzunluğu(length) 50 ten büyük OLMAYIP aynı zamanda rental_rate değeri 2.99 veya 4.99 OLMAYAN verileri sıralayınız.
 
 `SELECT * FROM film`<br>
-`WHERE rental_rate IN (0.99,2.99,4.99) AND replacement_cost IN(12.99,15.99,28.99);`
+`WHERE NOT length > 50 AND NOT (rental_rate = 2.99 OR rental_rate = 4.99);`
 
